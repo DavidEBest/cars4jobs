@@ -453,17 +453,20 @@ textarea {
 
 /* Partners */
 .partners-logos {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 3rem;
+  justify-items: center;
+  gap: 2rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
 }
 
 .partners-logos img {
+  max-width: 200px;
   max-height: 80px;
   width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* Footer */
