@@ -451,6 +451,21 @@ textarea {
   font-weight: 700;
 }
 
+/* Partners */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.partners-logos img {
+  max-height: 80px;
+  width: auto;
+}
+
 /* Footer */
 footer {
   background: var(--dark);
