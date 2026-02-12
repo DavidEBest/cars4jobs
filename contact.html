@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Cars4Work</title>
+  <meta name="description" content="Contact Cars4Work to learn more about partnering, donating, or getting involved.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Cars4Work - Making Jobs Accessible">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#collaborators">Collaborators</a></li>
+          <li><a href="donate.html">Donate a Vehicle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section>
+    <div class="container">
+      <div class="form-section">
+        <div class="form-intro">
+          <h2>Contact Us</h2>
+          <p>Whether you want to join the network, apply for a vehicle, donate, or just learn more — we'd love to hear from you.</p>
+        </div>
+
+        <form action="https://formspree.io/terri@impactgarage.org" method="POST">
+          <input type="hidden" name="_subject" value="Cars4Work Inquiry">
+
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="organization">Organization (if applicable)</label>
+            <input type="text" id="organization" name="organization">
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">What is this regarding? *</label>
+            <select id="inquiry-type" name="inquiry_type" required>
+              <option value="">Select...</option>
+              <option value="join-network">Join the Cars4Work Network (Employer/Workforce Org)</option>
+              <option value="apply-vehicle">Apply for a Vehicle</option>
+              <option value="donate-vehicle">Donate a Vehicle</option>
+              <option value="donate-financial">Make a Financial Donation</option>
+              <option value="donate-parts">Donate Auto Parts</option>
+              <option value="volunteer">Volunteer as a Mechanic</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="media">Media Inquiry</option>
+              <option value="general">General Question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us more about how we can help..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cars4Work</h4>
+          <p style="color: rgba(255,255,255,0.7);">Making Jobs Accessible by treating transportation as essential workforce infrastructure.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#collaborators">Collaborators</a></li>
+            <li><a href="donate.html">Donate a Vehicle</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Partners</h4>
+          <ul>
+            <li><a href="https://impactgarage.org" target="_blank">Impact Garage</a></li>
+            <li><a href="https://theequitycenter.org" target="_blank">The Equity Center</a></li>
+            <li><a href="https://thecollaboratory.org" target="_blank">The Collaboratory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cars4Work. An initiative of The Collaboratory, The Equity Center, and Impact Garage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav ul').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
