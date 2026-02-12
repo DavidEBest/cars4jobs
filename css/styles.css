@@ -195,6 +195,35 @@ nav a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* Problem Statements */
+.problem-statements {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.problem-statement {
+  background: var(--white);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid var(--yellow);
+}
+
+.problem-statement ul {
+  margin-left: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.problem-statement li {
+  margin-bottom: 0.4rem;
+}
+
+.problem-statement p:last-child {
+  margin-bottom: 0;
+}
+
 /* How It Works */
 .steps {
   display: grid;
