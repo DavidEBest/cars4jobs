@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Britney's Story - Cars4Work</title>
+  <meta name="description" content="Britney's story: From Survival to Purpose. How reliable transportation helped Britney pursue her degree in social work.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Cars4Work - Making Jobs Accessible">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#collaborators">Collaborators</a></li>
+          <li><a href="donate.html">Donate a Vehicle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section class="story-page">
+    <div class="container">
+      <a href="index.html#testimonials" class="back-link">&larr; Back to Stories</a>
+      <h2>Britney's Story</h2>
+      <p class="story-subtitle">From Survival to Purpose</p>
+
+      <div class="story-hero">
+        <img src="images/story-britney.jpg" alt="Britney with her vehicle at Impact Garage">
+      </div>
+
+      <div class="story-body">
+        <p>Britney is rebuilding her life.</p>
+
+        <p>As a resident of a local organization supporting single moms, she made the courageous decision to pursue a degree in social work, determined to turn her own hardships into hope for other families.</p>
+
+        <p>But between parenting, classes, and responsibilities, unreliable transportation threatened to undo her progress. Getting to school, work, and caring for her child became stressful and uncertain.</p>
+
+        <p>Impact Garage re-homed a dependable vehicle to Britney, giving her more than transportation.</p>
+
+        <p>It gave her stability. It gave her independence. It gave her momentum.</p>
+
+        <p>Today, she's steadily working toward her degree, driving confidently toward a future where her story becomes someone else's support system.</p>
+
+        <p><em>Reliable transportation didn't just help her move. It helped her move forward.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cars4Work</h4>
+          <p style="color: rgba(255,255,255,0.7);">Making Jobs Accessible by treating transportation as essential workforce infrastructure.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#collaborators">Collaborators</a></li>
+            <li><a href="donate.html">Donate a Vehicle</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Partners</h4>
+          <ul>
+            <li><a href="https://impactgarage.org" target="_blank">Impact Garage</a></li>
+            <li><a href="https://theequitycenter.org" target="_blank">The Equity Center</a></li>
+            <li><a href="https://thecollaboratory.org" target="_blank">The Collaboratory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Cars4Work. An initiative of The Collaboratory, The Equity Center, and Impact Garage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav ul').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lani's Story - Cars4Work</title>
+  <meta name="description" content="Lani's story: The Road to Her Promise. How reliable transportation helped Lani pursue her college dream.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Cars4Work - Making Jobs Accessible">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#collaborators">Collaborators</a></li>
+          <li><a href="donate.html">Donate a Vehicle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section class="story-page">
+    <div class="container">
+      <a href="index.html#testimonials" class="back-link">&larr; Back to Stories</a>
+      <h2>Lani's Story</h2>
+      <p class="story-subtitle">The Road to Her Promise</p>
+
+      <div class="story-hero">
+        <img src="images/story-lani.jpg" alt="Lani with her vehicle at Impact Garage">
+      </div>
+
+      <div class="story-body">
+        <p>Lani has never taken the easy road.</p>
+
+        <p>She learned early how to adapt, how to persevere, and how to keep moving even when the future felt uncertain. She balanced school, part-time jobs, and the emotional weight of building a future largely on her own.</p>
+
+        <p>College wasn't just a goal. It was a promise she made to herself that her story would be defined by where she was going, not where she had been.</p>
+
+        <p>But there was one obstacle standing in her way: reliable transportation.</p>
+
+        <p>Through Impact Garage, a vehicle was re-homed to Lani. It wasn't brand new. It had miles on it and a story of its own. But it was dependable, carefully inspected, and repaired by technicians and volunteers who believe reliable transportation can change lives.</p>
+
+        <p>With keys in hand, Lani headed off to college, the beginning of her next chapter and the future she's worked so hard to build.</p>
+
+        <p><em>Because sometimes the difference between a dream and a degree is simply a way to get there.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cars4Work</h4>
+          <p style="color: rgba(255,255,255,0.7);">Making Jobs Accessible by treating transportation as essential workforce infrastructure.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#collaborators">Collaborators</a></li>
+            <li><a href="donate.html">Donate a Vehicle</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Partners</h4>
+          <ul>
+            <li><a href="https://impactgarage.org" target="_blank">Impact Garage</a></li>
+            <li><a href="https://theequitycenter.org" target="_blank">The Equity Center</a></li>
+            <li><a href="https://thecollaboratory.org" target="_blank">The Collaboratory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Cars4Work. An initiative of The Collaboratory, The Equity Center, and Impact Garage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav ul').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
