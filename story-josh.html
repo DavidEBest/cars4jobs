@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josh's Story - Cars4Work</title>
+  <meta name="description" content="Josh's story: Resilience in Motion. How reliable transportation helped Josh rebuild his life and maintain steady employment.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Cars4Work - Making Jobs Accessible">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#collaborators">Collaborators</a></li>
+          <li><a href="donate.html">Donate a Vehicle</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Story -->
+  <section class="story-page">
+    <div class="container">
+      <a href="index.html#testimonials" class="back-link">&larr; Back to Stories</a>
+      <h2>Josh's Story</h2>
+      <p class="story-subtitle">Resilience in Motion</p>
+
+      <div class="story-hero">
+        <img src="images/story-josh.jpg" alt="Josh with his vehicle at Impact Garage">
+      </div>
+
+      <div class="story-body">
+        <p>Josh went through a difficult season that disrupted his stability and set him back in ways he never expected.</p>
+
+        <p>Determined to rebuild, he made the decision to seek help and commit to a structured inpatient program. Completing that program marked a turning point, one where he chose growth, accountability, and a fresh start.</p>
+
+        <p>From there, Josh connected with The Equity Center, where he gained skills, training, and meaningful employment. Through their support and his own determination, he completed the program and secured a position with a local manufacturing company. For the first time in years, he had steady employment and a renewed sense of purpose.</p>
+
+        <p>What he still didn't have was reliable transportation.</p>
+
+        <p>Josh had not owned a vehicle in over five years. Without a car, maintaining work, managing appointments, and handling daily responsibilities required extra time, planning, and stress.</p>
+
+        <p>When Impact Garage re-homed a dependable vehicle to Josh, it represented freedom and stability.</p>
+
+        <p>Today, Josh isn't defined by his past challenges. He's defined by resilience, growth, and momentum &mdash; and now, he has the reliable transportation to keep moving forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cars4Work</h4>
+          <p style="color: rgba(255,255,255,0.7);">Making Jobs Accessible by treating transportation as essential workforce infrastructure.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#collaborators">Collaborators</a></li>
+            <li><a href="donate.html">Donate a Vehicle</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Our Partners</h4>
+          <ul>
+            <li><a href="https://impactgarage.org" target="_blank">Impact Garage</a></li>
+            <li><a href="https://theequitycenter.org" target="_blank">The Equity Center</a></li>
+            <li><a href="https://thecollaboratory.org" target="_blank">The Collaboratory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Cars4Work. An initiative of The Collaboratory, The Equity Center, and Impact Garage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('active');
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav ul').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
